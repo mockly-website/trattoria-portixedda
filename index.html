@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trattoria Portixedda · Cucina sarda di mare a Oristano</title>
+  <meta name="description" content="Trattoria Portixedda, Vicolo Solferino 6, Oristano. Specialità sarde con prodotti locali: fregola allo scoglio, culurgiones, tonno rosso e pesce fresco. Prenota: +39 339 768 6131.">
+  <meta property="og:title" content="Trattoria Portixedda · Oristano">
+  <meta property="og:description" content="Cucina sarda di mare nel cuore di Oristano. Specialità sarde con prodotti locali.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:image" content="images/sfondo.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230B2545'/%3E%3Cpath d='M22 30 l4 -7 l4 7 M30 30 l4 -7 l4 7 M38 30 l4 -7 l4 7' stroke='%23F7F3EC' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M32 26 v14 M26 32 h12 M32 36 l-6 -4 M32 36 l6 -4' stroke='%23E07A5F' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-logo">
+      <img src="images/logo1-senza.png" alt="Trattoria Portixedda" class="preloader-badge preloader-img">
+      <p class="preloader-name">Trattoria <em>Portixedda</em></p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Trattoria Portixedda — home">
+        <img src="images/logo1-senza.png" alt="Trattoria Portixedda" class="brand-badge brand-logo-img">
+        <span class="brand-text">
+          <strong>Trattoria</strong>
+          <span>Portixedda</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigazione principale">
+        <a href="#chi-siamo" class="nav-link">La Trattoria</a>
+        <a href="#specialita" class="nav-link">Specialità</a>
+        <a href="#menu" class="nav-link">Menù</a>
+        <a href="#contatti" class="nav-link">Contatti</a>
+        <a href="#contatti" class="btn btn-primary btn-nav">Prenota</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/sfondo.jpg" alt="" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <p class="hero-eyebrow reveal-hero"><span class="line"></span>Oristano · Sardegna<span class="line"></span></p>
+        <h1 class="hero-title" aria-label="Trattoria Portixedda">
+          <span class="word-wrap"><span class="hero-word">Trattoria</span></span>
+          <span class="word-wrap"><span class="hero-word accent">Portixedda</span></span>
+        </h1>
+        <p class="hero-sub reveal-hero">Specialità sarde con prodotti locali — cucina di mare nel cuore di Oristano</p>
+        <div class="hero-actions reveal-hero">
+          <a href="#menu" class="btn btn-gold">Scopri il menù
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contatti" class="btn btn-outline">Prenota un tavolo</a>
+        </div>
+        <div class="hero-meta reveal-hero">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span>Vicolo Solferino 6, 09170 Oristano</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span>Mar–Dom · 12:30–15:00 &nbsp;·&nbsp; 20:00–22:00</span>
+          </div>
+          <div class="hero-meta-item rating">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+            <span>4,4/5 · 2.000+ recensioni</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path class="wave-path wave-path-a" d="M0,64 C240,110 480,10 720,56 C960,102 1200,20 1440,60 L1440,120 L0,120 Z"></path>
+          <path class="wave-path wave-path-b" d="M0,80 C240,30 480,120 720,76 C960,32 1200,104 1440,66 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
+      <a href="#chi-siamo" class="scroll-cue" aria-label="Scorri per scoprire">
+        <span class="mouse"><span class="dot"></span></span>
+      </a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Fregola nera allo scoglio</span><i>✦</i>
+          <span>Culurgiones sardi</span><i>✦</i>
+          <span>Tonno rosso scottato</span><i>✦</i>
+          <span>Spaghetti arselle e bottarga</span><i>✦</i>
+          <span>Seadas al miele</span><i>✦</i>
+          <span>Pesce fresco del giorno</span><i>✦</i>
+          <span>Vini di Sardegna</span><i>✦</i>
+        </div>
+        <div class="marquee-group">
+          <span>Fregola nera allo scoglio</span><i>✦</i>
+          <span>Culurgiones sardi</span><i>✦</i>
+          <span>Tonno rosso scottato</span><i>✦</i>
+          <span>Spaghetti arselle e bottarga</span><i>✦</i>
+          <span>Seadas al miele</span><i>✦</i>
+          <span>Pesce fresco del giorno</span><i>✦</i>
+          <span>Vini di Sardegna</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHI SIAMO -->
+    <section class="about section" id="chi-siamo">
+      <div class="container about-grid">
+        <div class="about-media reveal-left">
+          <figure class="frame">
+            <img src="images/about.jpg" alt="I piatti della Trattoria Portixedda" loading="lazy">
+          </figure>
+          <div class="about-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2.5 14.7 8l6 .8-4.4 4.1 1.1 5.9L12 15.9l-5.4 2.9 1.1-5.9L3.3 8.8l6-.8L12 2.5Z" fill="currentColor"/></svg>
+            <strong>4,4/5</strong>
+            <span>su Google</span>
+          </div>
+        </div>
+
+        <div class="about-body reveal-right">
+          <p class="eyebrow"><span class="line"></span>La Trattoria</p>
+          <h2 class="section-title">Un angolo di Sardegna <em>nel cuore di Oristano</em></h2>
+          <p class="lead">Nel centro storico, a due passi dalla Chiesa di Santa Chiara, la Trattoria Portixedda racconta la nostra isola a tavola: pesce fresco del giorno, prodotti del territorio e ricette sarde reinterpretate con cura e passione.</p>
+          <p class="muted">Da Roberto e Gabriella ogni ospite è di famiglia. Un'accoglienza calorosa e genuina, una cucina che unisce il piacere di mangiare bene alla grande cura dei piatti. Anche vegetariani, vegani e intolleranti troveranno sempre un'alternativa pensata su misura.</p>
+
+          <div class="stats" id="stats">
+            <div class="stat">
+              <strong class="stat-num" data-count="4.4" data-decimals="1">0</strong>
+              <span>Valutazione Google</span>
+            </div>
+            <div class="stat">
+              <strong class="stat-num" data-count="2138">0</strong>
+              <span>Recensioni TripAdvisor</span>
+            </div>
+            <div class="stat">
+              <strong class="stat-num" data-count="27">0</strong>
+              <span>€ prezzo medio</span>
+            </div>
+            <div class="stat">
+              <strong class="stat-num" data-count="100"><span class="num">0</span><small>%</small></strong>
+              <span>Consigliato dai clienti</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#specialita" class="btn btn-primary">Le nostre specialità</a>
+            <a href="#galleria" class="btn btn-ghost">Guarda la galleria</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALITA -->
+    <section class="specialties section" id="specialita">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="line"></span>Le Specialità</p>
+          <h2 class="section-title">I piatti che <em>ci rappresentano</em></h2>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <figure class="card-media">
+              <img src="images/seafood.jpg" alt="Fregola nera allo scoglio con scampi e bottarga" loading="lazy">
+              <span class="card-tag">Il più amato</span>
+            </figure>
+            <div class="card-body">
+              <h3>Fregola nera allo scoglio</h3>
+              <p>Sugo di scampi, pesto di pistacchio e bottarga: il piatto più celebrato dalle recensioni.</p>
+              <a href="#menu" class="card-link">Vedi in menù →</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <img src="images/pasta.jpg" alt="Spaghetti alle arselle e bottarga" loading="lazy">
+              <span class="card-tag">Classico del mare</span>
+            </figure>
+            <div class="card-body">
+              <h3>Spaghetti arselle e bottarga</h3>
+              <p>Due grandi classici del Golfo di Oristano: arselle fresche e bottarga di muggine.</p>
+              <a href="#menu" class="card-link">Vedi in menù →</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <img src="images/fish.jpg" alt="Tonno rosso scottato con crostacei" loading="lazy">
+              <span class="card-tag">Stagionale</span>
+            </figure>
+            <div class="card-body">
+              <h3>Tonno rosso scottato</h3>
+              <p>Descritto da molti ospiti come il miglior tonno dell'isola: scottatura perfetta, cuore tenero.</p>
+              <a href="#menu" class="card-link">Vedi in menù →</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <figure class="card-media">
+              <img src="images/food1.jpg" alt="Culurgiones di patate e menta al pomodoro burdo" loading="lazy">
+              <span class="card-tag">Tradizione sarda</span>
+            </figure>
+            <div class="card-body">
+              <h3>Culurgiones</h3>
+              <p>I culurgiones d'Ogliastra di patate e menta, conditi col sugo di pomodoro burdo.</p>
+              <a href="#menu" class="card-link">Vedi in menù →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="line"></span>Il Menù</p>
+          <h2 class="section-title">Sapori di terra e <em>di mare</em></h2>
+          <p class="section-sub">Cucina sarda con prodotti locali, pesce fresco ogni giorno. Prezzi indicativi al 2026.</p>
+        </header>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Categorie del menù">
+          <button class="menu-tab active" data-target="antipasti" role="tab" aria-selected="true">Antipasti</button>
+          <button class="menu-tab" data-target="primi" role="tab" aria-selected="false">Primi</button>
+          <button class="menu-tab" data-target="secondi" role="tab" aria-selected="false">Secondi</button>
+          <button class="menu-tab" data-target="contorni" role="tab" aria-selected="false">Contorni &amp; Dolci</button>
+          <button class="menu-tab" data-target="bevande" role="tab" aria-selected="false">Bevande</button>
+        </div>
+
+        <div class="menu-panels">
+          <div class="menu-panel active" id="antipasti" role="tabpanel">
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Zuppa di cozze</h4><p>niedditas fresche del Golfo</p></div><span class="dish-dots"></span><strong class="dish-price">€17</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Insalata di polpo</h4><p>polpo tenero, olio EVO e limone</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Degustazione 4 antipasti</h4><p>selezione dello chef</p></div><span class="dish-dots"></span><strong class="dish-price">€17</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Misto mare x2</h4><p>tagliere di antipasti di mare per due</p></div><span class="dish-dots"></span><strong class="dish-price">€32</strong></div>
+            </div>
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Tartar di tonno rosso</h4><p>tonno rosso crudo, emulsioni agrumate</p></div><span class="dish-dots"></span><strong class="dish-price">€20</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Tartar di manzo</h4><p>carpaccio di manzo, capperi e grana</p></div><span class="dish-dots"></span><strong class="dish-price">€20</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Caprese di bufala</h4><p>mozzarella di bufala, pomodoro e basilico</p></div><span class="dish-dots"></span><strong class="dish-price">€15</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Flan di zucchine</h4><p>delicato flan al profumo di erbe</p></div><span class="dish-dots"></span><strong class="dish-price">€13</strong></div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="primi" role="tabpanel">
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Tipico</h4><p>spaghetto arselle e bottarga</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Classico</h4><p>spaghetto cozze, arselle e bottarga</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Fregola del marinaio</h4><p>fregola con salsa allo scoglio</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Fregola bruciata</h4><p>fregola nera, sugo di scampi e pesto di pistacchio</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Pataviola</h4><p>gnocco di patate viola, arselle e bottarga</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Culurgiones</h4><p>ripieno di patate e menta, sugo di pomodoro burdo</p></div><span class="dish-dots"></span><strong class="dish-price">€14</strong></div>
+            </div>
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Ravioli di cernia</h4><p>cernia, salsa di soia, bottarga e noci</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Ravioli spada e lime</h4><p>pesce spada e lime, salsa di soia e bottarga</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Gnocchetti alla campidanese</h4><p>gnocchetti con sugo di salsiccia</p></div><span class="dish-dots"></span><strong class="dish-price">€13</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Pasta al ragù</h4><p>ragù di manzo a cottura lenta</p></div><span class="dish-dots"></span><strong class="dish-price">€13</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Pomodorini e pesto</h4><p>pesto alla genovese e pomodorini</p></div><span class="dish-dots"></span><strong class="dish-price">€13</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Pasta al pomodoro</h4><p>pomodoro fresco, basilico e olio EVO</p></div><span class="dish-dots"></span><strong class="dish-price">€8</strong></div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="secondi" role="tabpanel">
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Tonno rosso scottato</h4><p>scottatura al sesamo, riduzione di soia</p></div><span class="dish-dots"></span><strong class="dish-price">€20</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Tonno alla carlofortina</h4><p>in umido con capperi, olive e pomodoro</p></div><span class="dish-dots"></span><strong class="dish-price">€20</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Grigliata di mare</h4><p>selezione del pesce del giorno</p></div><span class="dish-dots"></span><strong class="dish-price">€25</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Orata alla griglia</h4><p>pesce fresco del giorno</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Calamaro alla griglia</h4><p>calamaro fresco, olio e limone</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Gamberoni alla griglia</h4><p>gamberoni rossi di pregio</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+            </div>
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Fritto di calamari</h4><p>pastella leggera e croccante</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Fritto misto</h4><p>calamari e pesce del giorno</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Bistecca di cavallo / manzo</h4><p>carne scelta alla griglia</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Tagliata rucola e grana</h4><p>manzo, rucola e scaglie di grana</p></div><span class="dish-dots"></span><strong class="dish-price">€18</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Grigliata mista di carne</h4><p>per gli amanti della brace</p></div><span class="dish-dots"></span><strong class="dish-price">€20</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Piatti speciali dell'oste</h4><p>fuori menù, chiedete al nostro Roberto</p></div><span class="dish-dots"></span><strong class="dish-price">€25</strong></div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="contorni" role="tabpanel">
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Caponata siciliana</h4><p>melanzane, pomodoro e capperi</p></div><span class="dish-dots"></span><strong class="dish-price">€5</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Insalata mista</h4><p>verdure di stagione</p></div><span class="dish-dots"></span><strong class="dish-price">€5</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Patate alla griglia</h4><p>rosmarino e olio EVO</p></div><span class="dish-dots"></span><strong class="dish-price">€5</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Verdure alla griglia</h4><p>di stagione</p></div><span class="dish-dots"></span><strong class="dish-price">€5</strong></div>
+            </div>
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Seadas</h4><p>il dolce sardo per eccellenza, miele e pecorino</p></div><span class="dish-dots"></span><strong class="dish-price">€6</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Dolci del giorno</h4><p>preparati in casa</p></div><span class="dish-dots"></span><strong class="dish-price">€5</strong></div>
+              <div class="dish dish-veg"><div class="dish-info"><h4>Opzioni vegetariane &amp; vegane</h4><p>su richiesta, con 48h di preavviso anche menù vegano completo</p></div><span class="dish-dots"></span><strong class="dish-price">—</strong></div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="bevande" role="tabpanel">
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Acqua naturale / frizzante</h4><p>in bottiglia 75cl</p></div><span class="dish-dots"></span><strong class="dish-price">€2</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Vino della casa</h4><p>rosso o bianco di Sardegna, al calice</p></div><span class="dish-dots"></span><strong class="dish-price">€4</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Vernaccia di Oristano DOC</h4><p>il vino del nostro territorio</p></div><span class="dish-dots"></span><strong class="dish-price">€5</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Birra Ichnusa</h4><p>la birra sarda, 33cl / 66cl</p></div><span class="dish-dots"></span><strong class="dish-price">€4 / 6</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Filo e ferrato</h4><p>vermut sardo, acqua e ghiaccio</p></div><span class="dish-dots"></span><strong class="dish-price">€3</strong></div>
+            </div>
+            <div class="menu-col">
+              <div class="dish"><div class="dish-info"><h4>Coca-Cola / Zero</h4><p>lattina 33cl</p></div><span class="dish-dots"></span><strong class="dish-price">€3</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Aranciata / Limonata / Chinotto</h4><p>lattina 33cl</p></div><span class="dish-dots"></span><strong class="dish-price">€3</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Spuma / Gassosa</h4><p>lattina 33cl</p></div><span class="dish-dots"></span><strong class="dish-price">€3</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Caffè espresso</h4><p>tostatura artigianale</p></div><span class="dish-dots"></span><strong class="dish-price">€1.5</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Caffè corretto / Amaro</h4><p>dopo pasto</p></div><span class="dish-dots"></span><strong class="dish-price">€3</strong></div>
+              <div class="dish"><div class="dish-info"><h4>Mirto di Sardegna</h4><p>il liquore della nostra isola</p></div><span class="dish-dots"></span><strong class="dish-price">€4</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-extras reveal">
+          <article class="extra-card featured">
+            <span class="extra-label">Menu degustazione</span>
+            <h3>Menù Portixedda</h3>
+            <p>6 antipasti misti di stagione · primo o secondo a scelta · seadas</p>
+            <strong class="extra-price">€40</strong>
+            <a href="tel:+393397686131" class="btn btn-gold btn-sm">Prenota al telefono</a>
+          </article>
+          <article class="extra-card">
+            <span class="extra-label">Occasioni speciali</span>
+            <h3>Menù Ferragosto</h3>
+            <p>Menù fisso dedicato alla giornata di Ferragosto, da prenotare in anticipo.</p>
+            <strong class="extra-price">€50</strong>
+            <a href="https://www.thefork.it/ristorante/trattoria-pizzeria-portixedda-r852077" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Prenota su TheFork</a>
+          </article>
+        </div>
+
+        <div class="menu-notes reveal">
+          <div class="menu-note coperto-note">
+            <strong>Coperto</strong>
+            <p>€2 a persona<br>pane e grissini della casa</p>
+          </div>
+          <div class="menu-note allergens-note">
+            <strong>Allergeni</strong>
+            <ul class="allergen-list">
+              <li>Glutine e cereali</li>
+              <li>Crostacei</li>
+              <li>Uova</li>
+              <li>Pesce</li>
+              <li>Arachidi</li>
+              <li>Soia</li>
+              <li>Latte e derivati</li>
+              <li>Frutta a guscio</li>
+              <li>Sedano</li>
+              <li>Senape</li>
+              <li>Sesamo</li>
+              <li>Solfiti e anidride solforosa</li>
+              <li>Lupini</li>
+              <li>Molluschi</li>
+            </ul>
+            <p class="allergen-note">Le nostre preparazioni possono contenere gli allergeni indicati. Per informazioni sulle singole portate, o per allergie e intolleranze, parla con il personale: disponiamo di opzioni senza glutine, vegetariane e vegane su richiesta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERIA -->
+    <section class="gallery section" id="galleria">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="line"></span>Galleria</p>
+          <h2 class="section-title">L'atmosfera <em>Portixedda</em></h2>
+        </header>
+        <div class="gallery-grid">
+          <figure class="g-item reveal g-tall"><img src="images/gallery-interior.jpg" alt="La sala della Trattoria Portixedda" loading="lazy"><figcaption>La nostra sala</figcaption></figure>
+          <figure class="g-item reveal"><img src="images/gallery-cozze.jpg" alt="Cozze fresche del Golfo" loading="lazy"><figcaption>Cozze fresche</figcaption></figure>
+          <figure class="g-item reveal"><img src="images/gallery-paella.jpg" alt="Piatto di mare" loading="lazy"><figcaption>Dal mare</figcaption></figure>
+          <figure class="g-item reveal"><img src="images/gallery-fritto.jpg" alt="Frittura di mare croccante" loading="lazy"><figcaption>Frittura di mare</figcaption></figure>
+          <figure class="g-item reveal"><img src="images/gallery-bottarga.jpg" alt="Bottarga di muggine di Cabras" loading="lazy"><figcaption>La bottarga</figcaption></figure>
+          <figure class="g-item reveal g-tall"><img src="images/gallery-ravioli.jpg" alt="Ravioli della casa" loading="lazy"><figcaption>I primi sardi</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENSIONI -->
+    <section class="reviews section" id="recensioni">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="line"></span>Recensioni</p>
+          <h2 class="section-title">I nostri ospiti <em>raccontano</em></h2>
+        </header>
+
+        <div class="carousel reveal" id="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Cucina superba e ospitalità calorosa di Roberto e Gabriella. Un'eccellenza a Oristano!"</blockquote>
+              <figcaption>— Ospite TripAdvisor</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Il tonno rosso migliore mai assaggiato sull'isola. Ottimo rapporto qualità-prezzo: ho pagato il conto con gioia."</blockquote>
+              <figcaption>— Recensione Google</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Piatti eccellenti, servizio gentile e accogliente. Menzione d'onore agli antipasti di mare e al tonno scottato."</blockquote>
+              <figcaption>— Recensione TripAdvisor</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Cibo sardo tipico di altissima qualità. Il titolare parla spagnolo, francese e inglese e ti accoglie come in famiglia."</blockquote>
+              <figcaption>— Recensione Google</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Da non perdere! Frittura di mare eccezionale e freschissima, piatti curati e abbondanti. Un 10 che si rinnova a ogni visita."</blockquote>
+              <figcaption>— Recensione Google</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Cucina sarda in vero trionfo: pesce freschissimo e piatti abbondanti e deliziosi. La fregola? La migliore mai assaggiata."</blockquote>
+              <figcaption>— Recensione TheFork</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Piatti curati e freschissimi, ampia scelta e accoglienza familiare. La trattoria si conferma un punto di riferimento a Oristano."</blockquote>
+              <figcaption>— Recensione TripAdvisor</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Esperienza inaspettata: piatti eccellenti e un servizio gentile e cordiale. Il padrone di casa Roberto rende tutto speciale."</blockquote>
+              <figcaption>— Recensione TripAdvisor</figcaption>
+            </figure>
+
+            <figure class="review-slide">
+              <div class="review-stars" aria-label="5 stelle su 5">
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 2.8 1.2-6.1L3 9.4l6.3-.8L12 3Z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>"Pur non essendo specializzati in cucina vegana, ci hanno preparato una cena deliziosa: quattro portate, tutte diverse e tutte buonissime."</blockquote>
+              <figcaption>— Recensione Google</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-nav">
+            <button class="carousel-btn" id="prevBtn" aria-label="Recensione precedente">
+              <svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Seleziona recensione"></div>
+            <button class="carousel-btn" id="nextBtn" aria-label="Recensione successiva">
+              <svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORARI & SERVIZI -->
+    <section class="services section" id="servizi">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="line"></span>Info Utili</p>
+          <h2 class="section-title">Orari e <em>servizi</em></h2>
+        </header>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <h3>Orari di apertura</h3>
+            <ul class="hours">
+              <li><span>Lunedì</span><strong class="closed">Chiuso</strong></li>
+              <li><span>Mar – Dom</span><strong>12:30 – 15:00</strong></li>
+              <li><span>Mar – Dom</span><strong>20:00 – 22:00</strong></li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 3.9 4.3.6-3.1 3 .7 4.2L12 12.9l-3.8 2  .7-4.2-3.1-3 4.3-.6L12 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            <h3>Servizi</h3>
+            <ul class="feature-list">
+              <li>Posti all'aperto</li>
+              <li>Asporto &amp; takeaway</li>
+              <li>Carte di credito</li>
+              <li>Accessibile in carrozzina</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+            <h3>Dove siamo</h3>
+            <p>Nel cuore del centro storico di Oristano, a pochi passi dalla Chiesa di Santa Chiara.</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=39.90478860,8.59559990" target="_blank" rel="noopener" class="card-link">Apri in Google Maps →</a>
+          </div>
+          <div class="service-card reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m5 7 7 6 7-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Dieta speciale</h3>
+            <p>Opzioni vegetariane, vegane e senza glutine. Menù vegano completo su richiesta con 48h di preavviso.</p>
+            <a href="tel:+393397686131" class="card-link">Chiedi al ristorante →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="contact section" id="contatti">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="line"></span>Prenotazioni</p>
+          <h2 class="section-title">Vieni a trovarci <em>a Oristano</em></h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <a href="tel:+393397686131" class="contact-card">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+              <span><small>Telefono &amp; WhatsApp</small><strong>+39 339 768 6131</strong></span>
+            </a>
+            <a href="mailto:trattoriaportixedda@hotmail.it" class="contact-card">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m5 7 7 6 7-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><small>Email</small><strong>trattoriaportixedda@hotmail.it</strong></span>
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=39.90478860,8.59559990" target="_blank" rel="noopener" class="contact-card">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></span>
+              <span><small>Indirizzo</small><strong>Vicolo Solferino 6, 09170 Oristano</strong></span>
+            </a>
+            <a href="https://www.thefork.it/ristorante/trattoria-pizzeria-portixedda-r852077" target="_blank" rel="noopener" class="btn btn-gold btn-block">Prenota online su TheFork</a>
+            <a href="https://wa.me/+393397686131?text=Ciao!%20Vorrei%20prenotare%20un%20tavolo%20alla%20Trattoria%20Portixedda" target="_blank" rel="noopener" class="btn btn-wa btn-block">Prenota su WhatsApp</a>
+          </div>
+
+          <div class="contact-map reveal-right">
+            <div class="map-frame">
+              <iframe title="Mappa Trattoria Portixedda, Vicolo Solferino 6, Oristano" src="https://maps.google.com/maps?q=39.90478860,8.59559990&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C240,80 480,10 720,44 C960,78 1200,16 1440,48 L1440,80 L0,80 Z"></path>
+      </svg>
+    </div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand footer-brand-link" aria-label="Torna all'inizio">
+          <img src="images/logo1-senza.png" alt="Trattoria Portixedda" class="brand-badge brand-logo-img">
+          <span class="brand-text"><strong>Trattoria</strong><span>Portixedda</span></span>
+        </a>
+        <p>Specialità sarde con prodotti locali. Cucina di mare nel cuore di Oristano, dal 1996.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/trattoriaportixedda" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-2.8h-2.8V9.4c0-.8.3-1.4 1.5-1.4h1.4V5.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.9H8v2.8h2.3v7h3.2Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://wa.me/+393397686131" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Zm0 1.7A7.3 7.3 0 1 1 5.3 18l-.4 1.7 1.8-.5A7.3 7.3 0 0 1 12 4.7Zm-3 3.6c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.8 2.2.9 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.5-.3-1.6-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.6-.2-1.6-.6-2.7-1.7-1-.9-1.6-1.9-1.8-2.2 0-.2 0-.4.1-.5l.6-.7c.1-.2.2-.3.1-.5l-.7-1.8c-.2-.4-.4-.4-.6-.4h-.7Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.tripadvisor.it/Restaurant_Review-g187884-d2475394-Reviews-Trattoria_Portixedda-Oristano_Province_of_Oristano_Sardinia.html" target="_blank" rel="noopener" aria-label="TripAdvisor">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="17.5" cy="14" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="6.5" cy="14" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 8h4.5l2-3h5l2 3H21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Link rapidi">
+        <h4>Esplora</h4>
+        <a href="#home">Home</a>
+        <a href="#chi-siamo">La Trattoria</a>
+        <a href="#specialita">Specialità</a>
+        <a href="#menu">Menù</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <a href="tel:+393397686131">+39 339 768 6131</a>
+        <a href="mailto:trattoriaportixedda@hotmail.it">trattoriaportixedda@hotmail.it</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=39.90478860,8.59559990" target="_blank" rel="noopener">Vicolo Solferino 6<br>09170 Oristano (OR)</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Orari</h4>
+        <p>Lunedì: <strong>chiuso</strong></p>
+        <p>Mar – Dom: <strong>12:30–15:00</strong></p>
+        <p>Mar – Dom: <strong>20:00–22:00</strong></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> Trattoria Portixedda · Oristano. Tutti i diritti riservati.</p>
+        <p class="footer-credits">Realizzato da <a href="https://mockly.it" target="_blank" rel="noopener">Mockly</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Torna in cima">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
