@@ -976,7 +976,7 @@ html.js .review-slide.active { display: block; }
   font-size: .82rem;
 }
 .footer-credits .heart { color: var(--coral); display: inline-block; animation: heartBeat 1.6s ease-in-out infinite; }
-.footer-credits a {
+.footer-credits a, .footer-credit a {
   color: var(--sand);
   font-weight: 700;
   text-decoration: underline;
@@ -984,7 +984,8 @@ html.js .review-slide.active { display: block; }
   text-underline-offset: 3px;
   transition: color .3s, text-decoration-color .3s;
 }
-.footer-credits a:hover { color: var(--gold); text-decoration-color: var(--gold); }
+.footer-credits a:hover, .footer-credit a:hover { color: var(--gold); text-decoration-color: var(--gold); }
+.footer-credit { font-size: .82rem; margin-top: 8px; }
 @keyframes heartBeat { 0%, 100% { transform: scale(1); } 30% { transform: scale(1.25); } }
 
 /* ============================== BACK TO TOP ============================== */
@@ -1115,3 +1116,10 @@ html.js .reveal.in-view, html.js .reveal-left.in-view, html.js .reveal-right.in-
   .hero-media img { animation: none; }
   .marquee-track { animation: none; }
 }
+
+/* ============================== MOCKLY WATERMARK ============================== */
+
+.mockly-watermark{position:fixed;inset:0;z-index:99999;pointer-events:none;display:flex;align-items:center;justify-content:center}
+.mockly-watermark-inner{font-family:monospace;font-size:clamp(5rem,18vw,14rem);font-weight:700;letter-spacing:clamp(12px,4vw,40px);color:rgba(0,0,0,.04);text-transform:uppercase;user-select:none;transform:rotate(-20deg);text-shadow:0 0 30px rgba(0,0,0,.02);animation:watermarkFade 3s ease-in-out infinite;text-align:center;line-height:1.1}
+.mockly-watermark-sub{display:block;font-size:clamp(.8rem,2.5vw,1.5rem);letter-spacing:clamp(6px,1.5vw,16px);margin-top:6px;opacity:.6}
+@keyframes watermarkFade{0%,100%{opacity:1}50%{opacity:.6}}
