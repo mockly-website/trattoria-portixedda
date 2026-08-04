@@ -66,7 +66,7 @@
   }
 
   hamburger.addEventListener("click", () => toggleMenu());
-  $$(".nav-link", navLinks).forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
+  $$("a", navLinks).forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") toggleMenu(false);
   });

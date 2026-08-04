@@ -193,10 +193,10 @@ html.js .preloader-name { opacity: 0; animation: fadeUp .8s var(--ease) forwards
 }
 .nav.scrolled {
   background: rgba(255, 253, 248, .92);
-  backdrop-filter: blur(14px);
   box-shadow: 0 8px 30px rgba(11, 37, 69, .1);
   height: 64px;
 }
+body:not(.menu-open) .nav.scrolled { backdrop-filter: blur(14px); }
 .nav.scrolled .brand-text strong, .nav.scrolled .brand-text span { color: var(--navy); }
 .nav.scrolled .brand-badge .wave { stroke: var(--gold); }
 .nav.scrolled .brand-badge .anchor { stroke: var(--coral); }
@@ -253,7 +253,7 @@ html.js .preloader-name { opacity: 0; animation: fadeUp .8s var(--ease) forwards
 .nav-link:hover, .nav-link.active { color: var(--cream); }
 .nav.scrolled .nav-link:hover, .nav.scrolled .nav-link.active { color: var(--ocean); }
 
-.btn-nav { padding: 10px 22px; font-size: .84rem; }
+.btn-nav { padding: 13px 28px; font-size: .92rem; }
 
 .hamburger {
   display: none;
@@ -1070,7 +1070,7 @@ html.js .reveal.in-view, html.js .reveal-left.in-view, html.js .reveal-right.in-
   .nav-links.open { transform: translateX(0); }
   .nav-link { font-size: 1.05rem; color: var(--cream) !important; }
   .nav-link::after { background: var(--gold); }
-  .btn-nav { width: 100%; }
+  .btn-nav { width: 100%; padding: 16px 28px; font-size: 1.02rem; }
   .hamburger { display: flex; }
   body.menu-open { overflow: hidden; }
 
