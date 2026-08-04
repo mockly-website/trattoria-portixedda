@@ -66,7 +66,22 @@
   }
 
   hamburger.addEventListener("click", () => toggleMenu());
-  $$("a", navLinks).forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
+  $$("a", navLinks).forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      const target = href && href.charAt(0) === "#" ? document.querySelector(href) : null;
+      if (target) {
+        e.preventDefault();
+        toggleMenu(false);
+        setTimeout(() => {
+          const top = target.getBoundingClientRect().top + window.scrollY - 96;
+          window.scrollTo({ top: Math.max(top, 0), behavior: prefersReduced ? "auto" : "smooth" });
+        }, 80);
+      } else {
+        toggleMenu(false);
+      }
+    });
+  });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") toggleMenu(false);
   });
